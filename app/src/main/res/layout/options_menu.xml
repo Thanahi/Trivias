@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Elija una opción"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="25.0sp"/>
+
+    <Button
+        android:id="@+id/btnanemias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/holo_purple"
+        android:gravity="center"
+        android:text="Anemias"
+        android:textColor="#000000"
+        android:textSize="25.0sp" />
+
+    <Button
+        android:id="@+id/btnpatologias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_blue_bright"
+        android:gravity="center"
+        android:text="Patologías"
+        android:textColor="#000000"
+        android:textSize="25.0sp" />
+</LinearLayout>

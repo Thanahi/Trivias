@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "815309283713",
+    "firebase_url": "https://trivia-e6017.firebaseio.com",
+    "project_id": "trivia-e6017",
+    "storage_bucket": "trivia-e6017.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815309283713:android:d95ff9386f317d6f",
+        "android_client_info": {
+          "package_name": "edu.galileo.android.triviaanemia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815309283713-drr6dlccmt1f17jcoj59tscqs950372m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX-LMzvmgO1radc6k3jvfkwVslblVw8jY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815309283713:android:9703a49f143a59bf",
+        "android_client_info": {
+          "package_name": "edu.galileo.android.triviadeanemias"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815309283713-drr6dlccmt1f17jcoj59tscqs950372m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX-LMzvmgO1radc6k3jvfkwVslblVw8jY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
