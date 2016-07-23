@@ -1,15 +1,15 @@
 package edu.galileo.android.triviadeanemias.login;
 
-
 import org.greenrobot.eventbus.Subscribe;
 
 import edu.galileo.android.triviadeanemias.lib.EventBus;
 import edu.galileo.android.triviadeanemias.lib.GreenRobotEventBus;
-import edu.galileo.android.triviadeanemias.login.event.LoginEvent;
 import edu.galileo.android.triviadeanemias.login.ui.LoginView;
+import edu.galileo.android.triviadeanemias.login.ui.events.LoginEvent;
+
 
 /**
- * Created by ihanaht on 14/07/2016.
+ * Created by ihanaht on 11/06/2016.
  */
 public class LoginPresenterImpl implements LoginPresenter {
     EventBus eventBus;

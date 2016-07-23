@@ -3,7 +3,7 @@ package edu.galileo.android.triviadeanemias.entities;
 import java.util.Map;
 
 /**
- * Created by ihanaht on 14/07/2016.
+ * Created by ihanaht on 12/06/2016.
  */
 public class User {
     String email;

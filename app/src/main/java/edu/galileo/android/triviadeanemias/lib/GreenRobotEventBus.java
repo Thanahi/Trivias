@@ -1,7 +1,7 @@
 package edu.galileo.android.triviadeanemias.lib;
 
 /**
- * Created by ihanaht on 14/07/2016.
+ * Created by ihanaht on 11/06/2016.
  */
 public class GreenRobotEventBus implements EventBus {
     org.greenrobot.eventbus.EventBus eventBus;
@@ -21,7 +21,7 @@ public class GreenRobotEventBus implements EventBus {
 
     @Override
     public void register(Object subscriber) {
-        eventBus.register(subscriber);
+            eventBus.register(subscriber);
     }
 
     @Override

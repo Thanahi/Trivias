@@ -1,7 +1,7 @@
-package edu.galileo.android.triviadeanemias.login.event;
+package edu.galileo.android.triviadeanemias.login.ui.events;
 
 /**
- * Created by ihanaht on 14/07/2016.
+ * Created by ihanaht on 11/06/2016.
  */
 public class LoginEvent {
     public final static int onSignInError = 0;

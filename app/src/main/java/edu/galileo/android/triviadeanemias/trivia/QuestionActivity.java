@@ -1,4 +1,4 @@
-package edu.galileo.android.triviadeanemias;
+package edu.galileo.android.triviadeanemias.trivia;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -16,6 +16,7 @@ import java.util.concurrent.TimeUnit;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import edu.galileo.android.triviadeanemias.R;
 
 /**
  * Created by ihanaht on 18/07/2016.

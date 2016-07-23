@@ -3,10 +3,8 @@ package edu.galileo.android.triviadeanemias;
 import android.app.Application;
 
 import com.google.firebase.database.FirebaseDatabase;
-
 import edu.galileo.android.triviadeanemias.lib.GlideImageLoader;
 import edu.galileo.android.triviadeanemias.lib.ImageLoader;
-
 
 /**
  * Created by ihanaht on 11/06/2016.

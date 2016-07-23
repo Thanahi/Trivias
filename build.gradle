@@ -30,7 +30,7 @@ ext {
     compileSdkVersion = 23
     buildToolsVersion = '24.0.1'
 
-    supportLibraryVersion = '24.0.0'
+    supportLibraryVersion = '24.1.1'
 
     circleImageViewVersion = '2.0.0'
     firebaseVersion= '9.0.2'

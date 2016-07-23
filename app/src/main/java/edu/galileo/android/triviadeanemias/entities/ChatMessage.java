@@ -1,6 +1,5 @@
 package edu.galileo.android.triviadeanemias.entities;
 
-
 import com.google.firebase.database.Exclude;
 
 /**

@@ -1,7 +1,6 @@
 package edu.galileo.android.triviadeanemias.domain;
 
 
-
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -17,7 +16,7 @@ import edu.galileo.android.triviadeanemias.entities.User;
 
 
 /**
- * Created by ihanaht on 14/07/2016.
+ * Created by ihanaht on 11/06/2016.
  */
 public class FirebaseHelper {
     private DatabaseReference dataReference;

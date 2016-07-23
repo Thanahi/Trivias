@@ -15,18 +15,20 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import edu.galileo.android.triviadeanemias.AndroidChatApplication;
-import edu.galileo.android.triviadeanemias.chat.ui.ChatActivity;
-import edu.galileo.android.triviadeanemias.entities.User;
-import edu.galileo.android.triviadeanemias.login.ui.LoginActivity;
 import edu.galileo.android.triviadeanemias.R;
 import edu.galileo.android.triviadeanemias.addcontact.ui.AddContactFragment;
+import edu.galileo.android.triviadeanemias.chat.ui.ChatActivity;
 import edu.galileo.android.triviadeanemias.contactlist.ContactListPresenter;
 import edu.galileo.android.triviadeanemias.contactlist.ContactListPresenterImpl;
-import edu.galileo.android.triviadeanemias.contactlist.ui.adapters.ContactListAdapter;
-import edu.galileo.android.triviadeanemias.contactlist.ui.adapters.OnItemClickListener;
+import edu.galileo.android.triviadeanemias.contactlist.ui.adpters.ContactListAdapter;
+import edu.galileo.android.triviadeanemias.contactlist.ui.adpters.OnItemClickListener;
+import edu.galileo.android.triviadeanemias.entities.User;
 import edu.galileo.android.triviadeanemias.lib.ImageLoader;
+import edu.galileo.android.triviadeanemias.login.ui.LoginActivity;
+import edu.galileo.android.triviadeanemias.trivia.TriviaActivity;
 
-public class ContactListActivity extends AppCompatActivity implements ContactListView, OnItemClickListener {
+public class ContactListActivity extends AppCompatActivity implements ContactListView, OnItemClickListener{
+
     @Bind(R.id.toolbar)
     Toolbar toolbar;
     @Bind(R.id.recyclerViewContacts)
@@ -50,7 +52,6 @@ public class ContactListActivity extends AppCompatActivity implements ContactLis
         setupAdapter();
         setupRecycleView();
     }
-
 
     @Override
     protected void onResume() {
@@ -94,6 +95,11 @@ public class ContactListActivity extends AppCompatActivity implements ContactLis
     public void addContact(){
         AddContactFragment frag = new AddContactFragment();
         frag.show(getSupportFragmentManager(), "");
+    }
+
+    @OnClick(R.id.chat)
+    public void handleGame() {
+        startActivity(new Intent(this, TriviaActivity.class));
     }
 
     private void setupAdapter() {

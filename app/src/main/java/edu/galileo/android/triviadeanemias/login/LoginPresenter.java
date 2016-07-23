@@ -1,10 +1,10 @@
 package edu.galileo.android.triviadeanemias.login;
 
 
-import edu.galileo.android.triviadeanemias.login.event.LoginEvent;
+import edu.galileo.android.triviadeanemias.login.ui.events.LoginEvent;
 
 /**
- * Created by ihanaht on 14/07/2016.
+ * Created by ihanaht on 11/06/2016.
  */
 public interface LoginPresenter {
     void onCreate();

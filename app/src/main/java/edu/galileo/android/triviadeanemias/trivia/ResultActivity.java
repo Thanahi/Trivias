@@ -1,4 +1,4 @@
-package edu.galileo.android.triviadeanemias;
+package edu.galileo.android.triviadeanemias.trivia;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import edu.galileo.android.triviadeanemias.R;
 
 /**
  * Created by ihanaht on 16/07/2016.

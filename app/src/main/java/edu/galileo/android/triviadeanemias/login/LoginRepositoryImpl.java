@@ -15,11 +15,11 @@ import edu.galileo.android.triviadeanemias.domain.FirebaseHelper;
 import edu.galileo.android.triviadeanemias.entities.User;
 import edu.galileo.android.triviadeanemias.lib.EventBus;
 import edu.galileo.android.triviadeanemias.lib.GreenRobotEventBus;
-import edu.galileo.android.triviadeanemias.login.event.LoginEvent;
+import edu.galileo.android.triviadeanemias.login.ui.events.LoginEvent;
 
 
 /**
- * Created by ihanaht on 14/07/2016.
+ * Created by ihanaht on 11/06/2016.
  */
 public class LoginRepositoryImpl implements LoginRepository {
     private FirebaseHelper helper;
@@ -35,13 +35,13 @@ public class LoginRepositoryImpl implements LoginRepository {
     @Override
     public void signUp(final String email, final String password) {
         FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
-                .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
-                    @Override
-                    public void onSuccess(AuthResult authResult) {
-                        postEvent(LoginEvent.onSignUpSuccess);
-                        signIn(email, password);
-                    }
-                })
+        .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+            @Override
+            public void onSuccess(AuthResult authResult) {
+                postEvent(LoginEvent.onSignUpSuccess);
+                signIn(email, password);
+            }
+        })
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {

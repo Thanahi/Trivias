@@ -1,4 +1,4 @@
-package edu.galileo.android.triviadeanemias;
+package edu.galileo.android.triviadeanemias.trivia;
 
 import android.content.ContentValues;
 import android.content.Context;

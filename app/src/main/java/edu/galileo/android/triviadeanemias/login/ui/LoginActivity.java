@@ -16,50 +16,51 @@ import edu.galileo.android.triviadeanemias.R;
 import edu.galileo.android.triviadeanemias.contactlist.ui.ContactListActivity;
 import edu.galileo.android.triviadeanemias.login.LoginPresenter;
 import edu.galileo.android.triviadeanemias.login.LoginPresenterImpl;
-import edu.galileo.android.triviadeanemias.signup.SignUpActivity;
+import edu.galileo.android.triviadeanemias.signup.ui.SignUpActivity;
 
-public class LoginActivity extends AppCompatActivity implements LoginView {
+public class LoginActivity extends AppCompatActivity implements LoginView{
 
-    @Bind(R.id.editTxtEmail)
-    EditText Email;
-    @Bind(R.id.editTxtPassword)
-    EditText Password;
     @Bind(R.id.btnSignin)
     Button btnSignIn;
     @Bind(R.id.btnSignup)
     Button btnSignUp;
+    @Bind(R.id.editTxtEmail)
+    EditText inputEmail;
+    @Bind(R.id.editTxtPassword)
+    EditText inputPassword;
     @Bind(R.id.progressBar)
     ProgressBar progressBar;
-    @Bind(R.id.LayoutContainer)
-    RelativeLayout LayoutContainer;
+    @Bind(R.id.layoutMainContainer)
+    RelativeLayout container;
 
-    private LoginPresenter loginPresentador;
+    private LoginPresenter loginPresenter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
 
-        loginPresentador = new LoginPresenterImpl(this);
+        loginPresenter = new LoginPresenterImpl(this);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
 
-        loginPresentador.onResume();
-        loginPresentador.checkForAuthenticatedUser();
+        loginPresenter.onResume();
+        loginPresenter.checkForAuthenticatedUser();
     }
 
     @Override
     protected void onPause() {
-        loginPresentador.onPause();
+        loginPresenter.onPause();
         super.onPause();
     }
 
     @Override
     protected void onDestroy() {
-        loginPresentador.onDestroy();
+        loginPresenter.onDestroy();
         super.onDestroy();
     }
 
@@ -72,8 +73,8 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
     @Override
     @OnClick(R.id.btnSignin)
     public void handleSignIn() {
-        loginPresentador.validateLogin(Email.getText().toString(),
-                Password.getText().toString());
+        loginPresenter.validateLogin(inputEmail.getText().toString(),
+                inputPassword.getText().toString());
     }
 
     @Override
@@ -98,9 +99,9 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
 
     @Override
     public void loginError(String error) {
-        Password.setText("");
+        inputPassword.setText("");
         String msgError = String.format(getString(R.string.login_error_message_signin), error);
-        Password.setError(msgError);
+        inputPassword.setError(msgError);
     }
 
     @Override
@@ -121,10 +122,9 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
     }
 
     private void setInputs(boolean enabled){
-        btnSignIn.setEnabled(enabled);
-        btnSignUp.setEnabled(enabled);
-        Email.setEnabled(enabled);
-        Password.setEnabled(enabled);
+        btnSignIn.setEnabled(true);
+        btnSignUp.setEnabled(true);
+        inputEmail.setEnabled(true);
+        inputPassword.setEnabled(true);
     }
-
 }

@@ -1,4 +1,4 @@
-package edu.galileo.android.triviadeanemias.signup;
+package edu.galileo.android.triviadeanemias.signup.ui;
 
 import android.content.Intent;
 import android.support.design.widget.Snackbar;

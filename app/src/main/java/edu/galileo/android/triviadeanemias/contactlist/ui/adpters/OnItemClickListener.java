@@ -1,4 +1,4 @@
-package edu.galileo.android.triviadeanemias.contactlist.ui.adapters;
+package edu.galileo.android.triviadeanemias.contactlist.ui.adpters;
 
 
 import edu.galileo.android.triviadeanemias.entities.User;

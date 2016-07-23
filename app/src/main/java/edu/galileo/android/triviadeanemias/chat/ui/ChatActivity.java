@@ -2,8 +2,8 @@ package edu.galileo.android.triviadeanemias.chat.ui;
 
 import android.content.Intent;
 import android.graphics.Color;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -25,7 +25,7 @@ import edu.galileo.android.triviadeanemias.domain.AvatarHelper;
 import edu.galileo.android.triviadeanemias.entities.ChatMessage;
 import edu.galileo.android.triviadeanemias.lib.ImageLoader;
 
-public class ChatActivity extends AppCompatActivity implements ChatView {
+public class ChatActivity extends AppCompatActivity implements ChatView{
 
     @Bind(R.id.toolbar)
     Toolbar toolbar;

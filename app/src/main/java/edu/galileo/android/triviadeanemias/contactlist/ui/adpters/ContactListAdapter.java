@@ -1,4 +1,4 @@
-package edu.galileo.android.triviadeanemias.contactlist.ui.adapters;
+package edu.galileo.android.triviadeanemias.contactlist.ui.adpters;
 
 import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
@@ -17,7 +17,6 @@ import edu.galileo.android.triviadeanemias.domain.AvatarHelper;
 import edu.galileo.android.triviadeanemias.entities.User;
 import edu.galileo.android.triviadeanemias.lib.ImageLoader;
 
-
 /**
  * Created by ihanaht on 12/06/2016.
  */
@@ -33,7 +32,7 @@ public class ContactListAdapter extends RecyclerView.Adapter<ContactListAdapter.
     }
 
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ContactListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.content_contact, parent, false);
         return new ViewHolder(view);
     }

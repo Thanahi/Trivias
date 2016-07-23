@@ -1,6 +1,5 @@
 package edu.galileo.android.triviadeanemias.contactlist.events;
 
-
 import edu.galileo.android.triviadeanemias.entities.User;
 
 /**

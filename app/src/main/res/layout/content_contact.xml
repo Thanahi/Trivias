@@ -9,15 +9,15 @@
     tools:context="edu.galileo.android.triviadeanemias.contactlist.ui.ContactListActivity"
     tools:showIn="@layout/activity_contact_list">
 
-       <de.hdodenhof.circleimageview.CircleImageView
-           xmlns:app="http://schemas.android.com/apk/res-auto"
-           android:id="@+id/imgAvatar"
-           android:layout_width="@dimen/contact_image_size"
-           android:layout_height="@dimen/contact_image_size"
-           android:layout_marginRight="@dimen/fab_margin"
-           app:civ_border_width="1dp"
-           app:civ_border_color="#FF000000"
-           />
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imgAvatar"
+        android:layout_width="@dimen/contact_image_size"
+        android:layout_height="@dimen/contact_image_size"
+        android:layout_marginRight="@dimen/fab_margin"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#FF000000"
+        />
 
     <TextView
         android:layout_width="wrap_content"

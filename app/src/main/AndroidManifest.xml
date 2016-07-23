@@ -5,44 +5,48 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".AndroidChatApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TriviaActivity">
+        <activity android:name=".login.ui.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".login.ui.LoginActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Option" />
-        </activity>
         <activity
             android:name=".contactlist.ui.ContactListActivity"
             android:label="@string/contactlist.title"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".signup.SignUpActivity">
+        <activity
+            android:name=".chat.ui.ChatActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".login.ui.LoginActivity" />
+                android:value=".contactlist.ui.ContactListActivity"/>
         </activity>
+        <activity android:name=".signup.ui.SignUpActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login.ui.LoginActivity"/>
+        </activity>
+        <activity android:name=".trivia.TriviaActivity" />
         <activity
-            android:name=".QuestionActivity"
+            android:name=".trivia.QuestionActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".QuestionActivity1"
+            android:name=".trivia.QuestionActivity1"
             android:label="@string/app_name" />
         <activity
-            android:name=".Options"
+            android:name=".trivia.Options"
             android:label="@string/app_name" />
         <activity
-            android:name=".ResultActivity"
+            android:name=".trivia.ResultActivity"
             android:label="@string/title.activity.result" />
     </application>
 
